@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>All Blog Posts</h2>
+<ul>
+    {% for post in posts %}
+    <li>
+        <a href="{{ url_for('post', post_id=post.id) }}" style="color: #333; text-decoration: none; font-size: 18px;">{{ post.title }}</a>
+    </li>
+    {% endfor %}
+</ul>
+<a href="{{ url_for('new_post') }}" style="display: block; margin-top: 20px; color: #fff; background-color: #333; padding: 10px 20px; text-decoration: none; text-align: center; width: 200px;">Create a New Post</a>
+{% endblock %}
