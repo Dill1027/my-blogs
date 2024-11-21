@@ -22,4 +22,4 @@ A simple blog platform built using Python and Flask. This application allows use
 To get started, clone this repository to your local machine:
 
 ```bash
-git clone https://github.com/Dill1027/my-blogs.git
+git clone https://github.com/Dillyour user name1027/repository name.git
